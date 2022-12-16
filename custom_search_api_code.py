@@ -8,9 +8,9 @@ import mysql.connector as mysql
 
 def connect_to_db():
     HOST='127.0.0.1'
-    DATABASE = "database-1.cluster-ro-ct2brvwy8za8.us-east-1.rds.amazonaws.com"
-    USER = "admin"
-    PASSWORD='d5Sj5U7lZqwNYsqRjhJI'
+    DATABASE = "DBname"
+    USER = "username"
+    PASSWORD='password'
     db_connection = mysql.connect(host=HOST ,database=DATABASE, user=USER, password=PASSWORD)
     return db_connection
 
